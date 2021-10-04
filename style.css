@@ -98,7 +98,21 @@ article, h2{
     font-family: sans;
     font-size: 40px;
 }
-
+#hmbtn{
+    padding: 10px 40px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#hmbtn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
 footer{
     color: white;
     background-image: url(/images/wp2108300.jpg);
