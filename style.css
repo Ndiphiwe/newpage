@@ -1,8 +1,15 @@
+/*
+########################
+######## GLOBAL ########
+########################
+*/
 body{
     background-color: gainsboro;
 }
-.ulstuff{
-    background-image: url(/images/wp2108300.jpg);
+
+.ulstuff {
+    background-image: url(/images/moon-mountain.jpg);
+    background-size: cover;
 }
 ul {
     list-style-type: none;
@@ -14,28 +21,87 @@ ul {
     overflow: hidden;
     
 }
+
 li {
     float: left;
 }
+
 li a {
     display: block;
-    
     color: white;
-    
     text-align: center;
-    
     padding: 20px 40px 20px 40px;
-    
     text-decoration: none;
-
     font-family: sans;
 }
+
 li a:hover {
-    background-color: #666;
+    background-color: #585c6438;
+    border-radius: 8px;
+    transition: all .4s;
+    color: #8ba7df;
+    text-decoration: underline;
 }
 
 li a .active {
     background-color: #111;
+}
+
+/* 
+########################
+###### HOME PAGE #######
+########################
+*/
+
+
+#hmbg{
+    background-image: url(/images/moon-mountain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hmpg{
+    font-family:serif;
+    color: black;
+    padding-top: 250px;
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b9d5e3;
+}
+
+#par{
+    color: white;
+    text-align: center;
+    font-family: sans;
+    font-size: 40px;
+}
+
+#hmbtn{
+    font-size: 16px;
+    padding: 15px 60px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+    opacity: 60%;
+    border-radius: 4px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.596);
+    text-decoration: none;
+    border: 1px solid aliceblue;
+}
+
+#hmbtn:hover{
+    cursor: pointer;
+    background-color: #060a13;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
 }
 
 h1{
@@ -46,9 +112,73 @@ h1{
     font-weight: 600;
     letter-spacing: 5px;
 }
+
+
+
+/* 
+###########################
+######## ABOUT PAGE #######
+###########################
+*/
+
+
+#abtpar{
+    float: left;
+    margin-bottom: 40px;
+    padding: 0 80px 0 80px;
+}
+#btncntc{
+    text-decoration: none;
+    padding: 40px;
+    color: black;
+    font-size: 20px;
+}
+
+#btncntc:hover{
+    cursor: pointer;
+}
+
+#thisart, img{
+    margin-left: 45px;
+}
+
+#fig{
+    width: max-content;
+    float: left;
+}
+
+#fig:hover{
+    cursor: pointer;
+}
+
+img:hover{
+    border: 1px solid black;
+}
+img {
+    opacity: 0.6;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+  }
+  
+  img:hover {
+    opacity: 1.0;
+  }
+
+  button{
+      transition: all .5s;
+  }
+
+
+/*
+################################
+########## CONTACT PAGE ########
+################################
+*/
+
 form{
     text-align: -moz-center;
 }
+
 .fs1{
     text-align: center;
     border: 2px solid black;
@@ -58,25 +188,46 @@ form{
     font-size: 40px;
     font-family: sans;
 }
+
+input{
+    border: 1px solid cadetblue;
+}
+
+textarea{
+    border: 1px solid cadetblue;
+}
+
+input:hover{
+    border: 1px solid black;
+}
+textarea:hover{
+    border: 1px solid black;
+}
+
 .fs1, input{
     width: 50%;
     padding: 10px 20px;
 }
+
 p.mydits{
     text-align: center;
     font-family: sans;
     font-style: italic;
     /* font-size: 30px; */
 }
+
 p.mydits strong{
     font-family: cursive;
     text-decoration: underline;
     font-size: 25px;
     margin-right: 10px;
 }
+
 #btn{
     font-size: 20px;
+    border-radius: 6px;
 }
+
 #btn:hover{
     cursor: pointer;
 }
@@ -91,75 +242,19 @@ article, h2{
     margin-bottom: 40px;
 }
 
-#hmbg{
+
+/*
+##########################
+######## FOOTER ##########
+##########################
+*/
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: white;
     background-image: url(/images/moon-mountain.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
-#hmpg{
-    color: white;
-    padding-top: 300px;
-    font-size: 100px;
-    font-weight: 100;
-    letter-spacing: 20px;
-}
-#par{
-    color: white;
-    text-align: center;
-    font-family: sans;
-    font-size: 40px;
-}
-#hmbtn{
-    padding: 10px 40px;
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-#hmbtn:hover{
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 4px;
-}
-footer{
-    color: white;
-    background-image: url(/images/wp2108300.jpg);
-}
-#abtpar{
-    float: left;
-    margin-bottom: 40px;
-    padding: 0 80px 0 80px;
-}
-#btncntc{
-    text-decoration: none;
-    padding: 40px;
-    color: black;
-    font-size: 20px;
-}
-#btncntc:hover{
-    cursor: pointer;
-}
 
-#thisart, img{
-    margin-left: 45px;
-}
-
-#fig{
-    width: max-content;
-    float: left;
-}
-#fig:hover{
-    cursor: pointer;
-}
-img {
-    opacity: 0.6;
-    border-radius: 10px;
-  }
-  
-  img:hover {
-    opacity: 1.0;
-  }
