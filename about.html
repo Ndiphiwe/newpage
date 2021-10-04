@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>About</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/images/fav.png" type="image/gif" sizes="16x16">
 </head>
 <body>
   <ul class="ulstuff">
@@ -12,10 +13,12 @@
   </ul>
   <h1 class="headings">About Page</h1>
 
-  <article id="thisart">
-    <h2>About myself</h2>
-    <img src="/images/beach1.jpeg" alt="beach image" width="800px">
-    <img src="/images/beach1.jpeg" alt="beach image" width="800px">
+  <article id="thisart" class="hover14 column">
+    <figure id="fig">
+      <img src="/images/beach1.jpeg" alt="beach image" width="800px" id="myImg" onclick="changeImg()">
+      <img src="/images/beach1.jpeg" alt="beach image" width="800px" onclick="changeImg2()" id="myImg2">
+    </figure>
+    
     <p id="abtpar">
 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor efficitur aliquam. Nullam volutpat tristique sem, non bibendum magna pellentesque vel. Phasellus nec urna a erat mattis auctor quis id neque. Nulla facilisi. Integer vitae pharetra nulla. Morbi et ante a dolor suscipit egestas ut ac lorem. Donec sollicitudin efficitur velit ac ultrices. In nec orci accumsan, feugiat nisl nec, blandit sem. Morbi sit amet felis et nisi porttitor cursus. Duis eleifend justo nec diam posuere faucibus. Aliquam erat volutpat.
@@ -28,10 +31,21 @@
       <br><br>
       Phasellus elementum lacus in tortor commodo elementum. Nullam finibus arcu enim, et euismod odio varius id. Suspendisse aliquam lacus quis tempor condimentum. Etiam at congue lacus. Donec cursus ex eros, pretium pharetra libero dignissim eget. Phasellus dolor sapien, vehicula gravida egestas non, tempor non augue. Curabitur dictum sollicitudin magna. Fusce ac ipsum at libero ultricies dictum. Praesent imperdiet augue ac ligula pellentesque, eu pulvinar elit consequat. Duis blandit vitae augue in tincidunt. Fusce pretium suscipit ex, quis suscipit orci hendrerit quis. </p><br>
       
-      <button><a href="/contact.html" id="btncntc">Contact Me</a></button>
+      <button style="margin-left: 80px;"><a href="/contact.html" id="btncntc">Contact Me</a></button>
 
   </article>
 
+  <script>
+
+    function changeImg() {
+        document.getElementById("myImg").src = "/images/beach2.jpg";
+        // document.getElementById("cap").innerHTML = "Fig.1 - Beach image at an Island";
+    }
+
+    function changeImg2 (){
+      document.getElementById("myImg2").src = "/images/beach2.jpg";
+    }
+    </script>
   
 </body>
 </html>
