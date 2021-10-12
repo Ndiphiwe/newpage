@@ -64,7 +64,7 @@ li a .active {
 #hmpg{
     font-family:serif;
     color: black;
-    padding-top: 250px;
+    padding-top: 200px;
     font-size: 100px;
     font-weight: 600;
     letter-spacing: 20px;
@@ -153,6 +153,7 @@ h1{
 
 img:hover{
     border: 1px solid black;
+    transition: all .5s;
 }
 img {
     opacity: 0.6;
@@ -243,11 +244,18 @@ article, h2{
 }
 
 
+/* ####################
+
+#######################
+*/
+
+
+
 /*
 ##########################
 ######## FOOTER ##########
 ##########################
-*/
+*/  
 
 
 footer{
@@ -258,3 +266,9 @@ footer{
     background-size: cover;
 }
 
+/* #hmpgfooter{
+    color: aliceblue;
+    padding-top: 300px;
+    text-align: center;
+}
+ */
