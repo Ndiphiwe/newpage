@@ -185,7 +185,8 @@ footer{
   /* On screens that are 992px wide or less, the background color is blue */
   @media screen and (max-width: 992px) {
     body {
-      background-color: blue;
+      /* background-image: url(/imgs/moon-mountain.jpg);
+      background-size: contain; */
       color: white;
     }
 
@@ -199,7 +200,7 @@ footer{
   @media screen and (max-width: 600px) {
     body {
       background-color: olive;
-      color: white;
+      color: rgb(10, 9, 9);
     }
     .container p{
       display: block;
