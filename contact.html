@@ -4,46 +4,60 @@
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="animation.css">
   <link rel="icon" href="/images/moon.png" type="image/gif" sizes="16x16">
 </head>
 <body>
  
+
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+
     <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="testimonials.html">Testimonials</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
-      </div>
-<h1>Contact Page</h1>
+    </div>
+
+  
+  <h1 class="h1hdgn">Contact Page</h1>
 
   <p class="mydits"><strong>Email:  </strong> pndira1770@gmail.com</p>
   <p class="mydits"><strong>Phone number:  </strong> 073 446 6639</p>
 
-  <form id="myform" autocomplete="on" method="POST" action="https://formspree.io/f/meqvdqnd">
+  <div class="form">
+    <form id="myform" autocomplete="on" method="POST" action="https://formspree.io/f/meqvdqnd">
 
-    <fieldset class="fs1"><legend>Your info</legend>
+      <fieldset class="fs1"><legend>Your info</legend>
 
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="Name" placeholder="Enter your name" autofocus required><br><br>
-        <label for="phone">Telephone:</label><br>
-        <input type="tel" id="phone" name="Phone" placeholder="Pattern: 333-234-8910" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email" placeholder="Enter your email address" required multiple><br><br>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="Name" placeholder="Enter your name" autofocus required><br><br>
+          <label for="phone">Telephone:</label><br>
+          <input type="tel" id="phone" name="Phone" placeholder="Pattern: 333-234-8910" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" name="email" id="email" placeholder="Enter your email address" required multiple><br><br>
 
 
-        <label for="about">Your message:</label><br>
-        <textarea name="about" id="about" cols="66" rows="10" required></textarea><br><br>
+          <label for="about">Your message:</label><br>
+          <textarea name="about" id="about" cols="66" rows="10" required></textarea><br><br>
 
-    </fieldset><br><br>
+      </fieldset><br><br>
 
-    <input type="submit" value="Submit" id="btn"><br>
+      <input type="submit" value="Submit" id="btn"><br>
 
-  </form><br><br>
+    </form><br><br>
 
-  <footer>
+  </div>
+
+  <footer id="ftrcntc">
     © Copyright Ndiphiwe Ngxola. All rights reserved
   </footer>
 

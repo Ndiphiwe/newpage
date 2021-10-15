@@ -81,7 +81,7 @@
       color: black;
       transform: rotateY(180deg);
       font-family: sans;
-      opacity: .8;
+      opacity: .9;
     }
     .flip-card-back p{
       padding: 10px;
@@ -91,6 +91,12 @@
     }
     .flip-card-back h1:hover{
       color: white;
+    }
+
+    #ftr{
+      text-align: center;
+      padding: 25 px;
+      margin-top: 400px;
     }
   
   
